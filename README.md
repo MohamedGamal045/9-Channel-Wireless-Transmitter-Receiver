@@ -20,6 +20,19 @@ This project combines custom transmitter and receiver PCB work, Arduino firmware
 
 The receiver output stage is compatible with control receivers or autopilot RC-input interfaces that accept the 1000–2000 µs PWM convention. The source code demonstrates the receiver mapping for this project. No flight behavior, vehicle configuration, or ArduPilot parameter setup beyond the source code is claimed.
 
+## 9-Channel Physical Hardware
+
+The transmitter PCB physically provides two additional switch positions beyond the programmed seven channels:
+
+| Physical switch | Proposed transmitter input | Channel | Firmware status |
+|---|---|---:|---|
+| Switch 3 | A4 | 8 | Hardware present; not implemented in the original firmware |
+| Switch 4 | A5 | 9 | Hardware present; not implemented in the original firmware |
+
+The receiver PCB has corresponding channel/output power sockets below the programmed channel outputs. They are intended to carry additional PWM and supply connections. The exact receiver pins, connector polarity, and ADC/digital pin assignment may be selected according to the PCB wiring and available Nano pins. No unsupported pin assignment is claimed here.
+
+These two physical switches can be added to a future firmware payload using `A4` and `A5`, or relocated to any suitable ADC or digital pins if the PCB wiring and wiring harness are changed consistently.
+
 ## Hardware Demonstration
 
 ![Project hardware](media/images/20260709_000315.jpg)

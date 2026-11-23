@@ -13,6 +13,9 @@
 ## Source-level limitations
 
 - The original final source implements seven channels.
+- Two additional physical switch positions are present on the transmitter PCB: Switch 3 on A4 and Switch 4 on A5.
+- These two switches are not read or transmitted by the final firmware and currently have no receiver PWM mapping.
+- The receiver PCB includes additional channel/output power sockets beneath the existing channel outputs. Their active Nano pin assignments must be verified against the PCB wiring before firmware use.
 - Both units use Arduino Nano-compatible pin numbering where D7/D8 are radio CE/CSN.
 - The exact board revision and electrical schematic are only available through the hardware and Proteus materials.
 - No ACK payload or bidirectional telemetry is implemented.
