@@ -22,8 +22,3 @@ Thumbs.db
 # Operating system files
 .DS_Store
 desktop.ini
-
-# Original source archive folders
-# The normalized folders above are the publication paths.
-/Media/
-/TX_RX_9_Ch/
