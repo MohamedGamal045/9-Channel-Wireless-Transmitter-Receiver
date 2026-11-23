@@ -22,3 +22,7 @@ Thumbs.db
 # Operating system files
 .DS_Store
 desktop.ini
+
+# Preserve original source folders outside the normalized repository layout
+/Media/
+/TX_RX_9_Ch/
